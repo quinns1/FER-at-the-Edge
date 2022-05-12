@@ -2,17 +2,14 @@
 Facial Emotion Recognition at the Edge
 ---------------------------------------------
 
-Coding is in progress and incomplete
----------------------------------------------
-
-
+![plot](./images/ML_Architecture.png)
 
 
 Facial emotion recognition implemented in this project is divided into a three phases:
 
 **Phase 1: Face detection**
 
-We investigate the various face detection methods including HAAR & MTCNN
+We investigate the various face detection methods including Viola Jones, HOG/SVM & MTCNN. For deployment on low-cost edge device (Raspberry Pi), lowest latencies were found using Viola Jones method for face detection
 
 **Phase 2: Facial emotion recognition**
 
