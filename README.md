@@ -6,11 +6,9 @@ High level ML architecture for work carried out in this project visualised below
 
 ![plot](./images/ML_Architecture.png)
 
-**Facial Emotion Recognition**
-Facial Emotion Recognition (FER) is the process of automatically deducing a test subjects emotions from facial expressions. Datasets used in training are FER-2013, FER-2013+, CK+ & JAFFE. FER-2013+ was used for building models uploaded to this repo. Importantly, FER-2013+ targets 8 class emotions (as opposed to 7 which some FER datasets use). 
+**Facial Emotion Recognition** (FER) is the process of automatically deducing a test subjects emotions from facial expressions. Datasets used in experimentation were FER-2013, FER-2013+, CK+ & JAFFE. FER-2013+ was used for building models uploaded to this repo. Importantly, FER-2013+ targets 8 class emotions (as opposed to 7 which some FER datasets use). 
  
- 2 baseline CNN based models were built using tensorflow. 
-
+2 baseline CNN based models were built using tensorflow.
 
 The goal of **Model Compression** is to reduce the size of a model which can aid in reducing latencys which is advantageous, particularly when deploying models on a resource constrained device. Model compression methods evaluated were quantization and pruning.
 
