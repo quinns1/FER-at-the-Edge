@@ -2,21 +2,26 @@
 Facial Emotion Recognition at the Edge
 ---------------------------------------------
 
+High level ML architecture for work carried out in this project visualised below.
+
 ![plot](./images/ML_Architecture.png)
 
-![Alt text](./images/ML_Architecture.png?raw=true "Title")
+**Face detection**
 
-Facial emotion recognition implemented in this project is divided into a three phases:
+2 baseline CNN based models were built using tensorflow. 
 
-**Phase 1: Face detection**
+**Model Compression**
 
-We investigate the various face detection methods including Viola Jones, HOG/SVM & MTCNN. For deployment on low-cost edge device (Raspberry Pi), lowest latencies were found using Viola Jones method for face detection
+*Quantization*
+Various permutations of quantization and pruning were incorporated and evaluated in terms of top-1 accuracy, latency and model size. The best performing model was retained and deployed to an edge device (Raspberry Pi).
 
-**Phase 2: Facial emotion recognition**
+*Pruning*
+Utilizing 2 by 4 structured pruning with FLOAT16 Quantization yielded a x6 reduction in model size, x6.3 reduction in latency with a 2.5% trade-off in accuracy
 
-We investigate various facial emotion recognition models; compare, contrast and build upon. 
 
-**Phase 3: Edge implementation**
 
-We look at implementing edge computing techniques such as quantization and pruning to enable the model to run on an edge device in realtime at an acceptable FPS rate.
+**Face detection**
+We investigate a number of face detection methods including Viola Jones, HOG/SVM & MTCNN. For deployment on low-cost edge device (Raspberry Pi), lowest latencies were found using Viola Jones method for face detection.
 
+
+Edge-FER implementation runs at 5.4FPS with face detection on edge device.
