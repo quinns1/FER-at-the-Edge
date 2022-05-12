@@ -4,6 +4,7 @@ Facial Emotion Recognition at the Edge
 
 ![plot](./images/ML_Architecture.png)
 
+![Alt text](./images/ML_Architecture.png?raw=true "Title")
 
 Facial emotion recognition implemented in this project is divided into a three phases:
 
